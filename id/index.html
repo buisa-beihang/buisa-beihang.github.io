@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+		<title>BUISA | Beihang Indonesia</title>
+    </head>
+    <body>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">✕</a>
+            <a href="javascript:void(0)" onclick="changeContent('direct/home.html')">Home</a>
+            <a href="javascript:void(0)" onclick="changeContent('direct/content.html')">Content</a>
+        </div>
+        <table class="titlebar">
+            <tr>
+                <td><button class="openbtn" onclick="openNav()">=</button></td>
+                <td class="emptycolumn"></td>
+                <td><p class="page1title">BUISA</p></td>
+            </tr>
+        </table>
+        <iframe class="framemodel" id="contentFrame" src="direct/home.html"></iframe>
+    </body>
+</html>
