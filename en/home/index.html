@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Beihang University Indonesian Students' Association - Promoting cultural and academic exchange">
+        <title>Beihang Indonesia by BUISA</title>
+        <!-- CSS and JS Dependencies -->
+        <!-- Make sure to include the correct paths for all dependencies. -->
+        <link rel="stylesheet" href="../../univ_code/universal_css.css">
+        <script src="../../univ_code/universal_js.js" defer></script>
+        <style>
+            /* Banner contents */
+            .home_banner-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0,0,0,0.2);
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+
+            .home_banner-content {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 100%;
+                gap: 40px; 
+                flex-direction: row;
+                box-sizing: border-box;
+                animation: univ_slideInUp 1s ease-out;
+            }
+
+            .home_banner-logo {
+                height: 10rem;
+                animation: univ_fadeIn 1.5s ease-out;
+            }
+
+            .home_banner-text {
+                color: white;
+                animation: univ_fadeIn 1.5s ease-out;
+            }
+
+            @media (orientation: portrait) and (max-width: 900px) {
+                .home_banner-content {
+                    flex-direction: column;
+                    gap: 10px;
+                    text-align: center;
+                }
+
+                .home_banner-logo {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+            
+            /* Partner icons */
+            .home_partner-ico {
+                height: 3rem; 
+                width: auto; 
+                filter: grayscale(50%);
+            }
+
+            .home_partner-ico:hover {
+                filter: grayscale(0%);
+                height: 3.15rem; 
+                transition: filter 0.3s ease;
+                transition: height 0.3s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar-->
+        <!-- Make sure to include the correct paths for all navlinks. -->
+        <nav class="univ_navbar" id="navbar">
+            <button class="univ_toggle-btn" id="toggleBtn">☰</button>
+            <div class="univ_nav-item">
+                <div class="univ_nav-text"><a href="../home/" class="univ_nav-link">Home</a></div>
+            </div>
+            <div class="univ_nav-item">
+                <div class="univ_nav-text"><a href="../about/" class="univ_nav-link">About Us</a></div>
+            </div>
+            <div class="univ_nav-item">
+                <div class="univ_nav-text"><a href="../content/" class="univ_nav-link">Content</a></div>
+            </div>
+            <div class="univ_nav-item">
+                <div class="univ_nav-text"><a href="../students-nav/" class="univ_nav-link">Student Navigation</a></div>
+            </div>
+        </nav>
+        <div class="univ_page-main-content">
+            <!-- Titlebar & Language selector -->
+            <div class="univ_page-main-content-30px-margin" style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 15px;">
+                <h1 style="margin: 0;">BUISA</h1>
+            <select id="univ_selector" class="univ_select" onchange="window.location.href=this.value">
+                    <option value="../en/">EN</option>
+                    <option value="../id/">ID</option>
+                    <option value="../cn/">CN</option>
+                </select>
+            </div>
+            <!-- Main Content -->
+            <!-- You're on your own from here on, make sure to include the correct paths for all media, and try not to break any other pages. -->
+                <!-- Banner goes here -->
+                <div class="univ_banner-container">
+                    <picture>
+                        <source media="(orientation: portrait) and (max-width: 900px)" srcset="../../media_assets/homepage_and_aboutus/homepage_banner_portrait.webp">
+                        <source media="(orientation: landscape) or (min-width: 901px)" srcset="../../media_assets/homepage_and_aboutus/homepage_banner_landscape.webp">
+                        <img src="../../media_assets/homepage_and_aboutus/homepage_banner_landscape.webp" alt="BUISA Banner" style="width: 100%; height: auto; display: block;">
+                    </picture>
+                    <div class="home_banner-overlay">
+                        <div class="home_banner-content">
+                            <img src="../../media_assets/org_logos/idty_logo_buisa.webp" alt="BUISA Logo" class="home_banner-logo">
+                            <div class="home_banner-text">
+                                <h1>Welcome to BUISA</h1>
+                                <p>Beihang University Indonesian Students' Association</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <!-- What do we do -->
+                <h2 class="text-center">What We Do</h2>
+                <p class="text-center">Representing Indonesia in Beihang University since 2008.</p>   
+                <br>
+                <div class="text-center univ_30px-margin" style="margin: 0 30px;">
+                    <div class="univ_3-column">
+                        <div class="text-center">
+                            <h3 class="text-center">18</h3>
+                            <p class="text-center">Years</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-center">3*</h3>
+                            <p class="text-center">Campuses</p>
+                            <p class="text-center" style="font-size: 8px; color: grey;">Our situation regarding the Hangzhou campus</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-center">30+</h3>
+                            <p class="text-center">Students</p>
+                        </div>
+                    </div>
+                </div>     
+                <br>
+                <div class="text-center">
+                    <button class="univ_button">About Us</button>
+                </div>
+                <br><br>
+                <!-- Contact us -->
+                <div class="univ_background-div" style="background-image: url('../../media_assets/homepage_and_aboutus/homepage_motivation.webp');">
+                    <div class="text-center univ_30px-margin" style="margin: 0 40px;">
+                        <div class="univ_2-column">
+                            <div class="text-center">
+                                <h3 class="text-center">Contact Us</h3>
+                                <a href="https://instagram.com/beihang.indonesia" target="_blank"><img src="../../media_assets/visual_id/univ_ico_ig.webp" alt="Instagram" class="contact-icon" style="height: 5rem; width: auto;"></a>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-center">Need Help?</h3>
+                                <br>
+                                <div class="text-center">
+                                    <button class="univ_button">Students' Navigation</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <!-- Partners and credibility -->
+                <div class="univ_page-main-content-30px-margin">
+                    <h2 class="text-center">Our Partners</h2>
+                    <p class="text-center">We have collaborated with various organisations to bring the best for our students.</p>
+                    <br>
+                    <div class="text-center univ_30px-margin" style="margin: 0 30px;">
+                        <div class="univ_5-column">
+                            <div class="text-center" style="height: 3.15rem;">
+                                <img src="https://www.ppitiongkok.com/logoppitfooter.svg" alt="PPI Tiongkok" class="home_partner-ico">
+                            </div>
+                            <div class="text-center" style="height: 3.15rem;">
+                                <img src="../../media_assets/org_logos/idty_logo_permit.webp" alt="PERMIT Beijing" class="home_partner-ico">
+                            </div>
+                            <div class="text-center" style="height: 3.15rem;">
+                                <img src="" alt="Partner 3" class="home_partner-ico" >
+                            </div>
+                            <div class="text-center" style="height: 3.15rem;">
+                                <img src="" alt="Partner 4" class="home_partner-ico">
+                            </div>
+                            <div class="text-center" style="height: 3.15rem;">
+                                <img src="" alt="Partner 5" class="home_partner-ico">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- Footer -->
+            <br><br>
+            <footer class="univ_footer">
+                <br>
+                <div class="univ_main-content-30px-margin">
+                    <p class="text-center">2026 - Beihang University Indonesian Students' Association. All rights reserved.</p>
+                    <p class="text-center">An Authorised Students' Organisation Under The Embassy of Indonesia to China, Beijing.</p>
+                <br>
+            </footer>
+        </div>
+    </body>
+</html>
+</html>
