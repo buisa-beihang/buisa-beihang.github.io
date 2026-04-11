@@ -98,28 +98,6 @@ body {
     }
 }
 
-/* Page Container */
-.univ_page-container {
-    margin-left: 250px;
-    transition: margin-left 0.3s ease;
-    width: calc(100% - 250px);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.univ_page-container.tucked {
-    margin-left: 60px;
-    width: calc(100% - 60px);
-}
-
-.univ_iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    transition: opacity 0.3s ease;
-}
-
 /* Selector */
 .univ_select {
     padding: 5px 10px;
