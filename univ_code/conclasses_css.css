@@ -58,9 +58,7 @@ body {
     flex-direction: column;
 }
 
-.univ_content-main-content-30px-margin {
-    margin: 0 30px;
-}
+/* The class .univ_content-main-content-30px-margin is used in universal_css. */
 
 .univ_content-page-bg {
     background-size: cover;
@@ -98,44 +96,28 @@ body {
     }
 }
 
-/* Page Container */
-.univ_content-page-container {
-    margin-left: 250px;
-    transition: margin-left 0.3s ease;
-    width: calc(100% - 250px);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.univ_content-page-container.tucked {
-    margin-left: 60px;
-    width: calc(100% - 60px);
-}
-
-.univ_content-iframe {
-    width: 100%;
-    height: 100%;
+/* Button styling */
+.univ_button {
+    background-color: #680000;
+    color: white;
     border: none;
-    transition: opacity 0.3s ease;
-}
-
-/* Selector */
-.univ_content-select {
-    padding: 5px 10px;
-    border: 2px solid #680000;
-    border-radius: 5px;
-    color: #680000;
-    background-color: white;
-    font-weight: bold;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-family: Radley, serif;
     cursor: pointer;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%23680000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 5px center;
-    padding-right: 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
+.univ_button:hover {
+    background-color: #8b0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.univ_footer {
+    background-color: #2c3e50;
+    color: white;
+    margin-top: auto;
+}
