@@ -30,18 +30,26 @@
                 <div class="univ_nav-text"><a href="../students-nav/" class="univ_nav-link">Student Navigation</a></div>
             </div>
         </nav>
-        <!-- Title & Selector -->
-        <div class="univ_content-main-content-30px-margin" style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 15px;">
-            <h1 style="margin: 0;">BUISA</h1>
-            <select id="univ_selector" class="univ_content-select" onchange="window.location.href=this.value">
-                <option value="../../en/home/">EN</option>
-                <option value="../../id/home/">ID</option>
-                <option value="../../cn/home/">CN</option>
-            </select>
-        </div>
-        <!-- Content container -->
-        <div class="univ_content-page-container" id="pageContainer">
-            <iframe src="../home/" class="univ_content-iframe" id="contentIframe"></iframe>
+        <div class="univ_page-main-content">
+            <!-- Titlebar & Language selector -->
+            <div class="univ_page-main-content-30px-margin" style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 15px;">
+                <h1 style="margin: 0;">BUISA</h1>
+            <select id="univ_selector" class="univ_select" onchange="window.location.href=this.value">
+                    <option value="../en/">EN</option>
+                    <option value="../id/">ID</option>
+                    <option value="../cn/">CN</option>
+                </select>
+            </div>
+            <!-- Main Content -->
+            <!-- You're on your own from here on, make sure to include the correct paths for all media, and try not to break any other pages. -->
+            <!-- Footer -->
+            <footer class="univ_footer">
+                <br>
+                <div class="univ_main-content-30px-margin">
+                    <p class="text-center">2026 - Beihang University Indonesian Students' Association. All rights reserved.</p>
+                    <p class="text-center">An Authorised Students' Organisation Under The Embassy of Indonesia to China, Beijing.</p>
+                <br>
+            </footer>
         </div>
     </body>
 </html>
