@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=id/">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.onload = function() {
-            // Check if the page is already at the target location to prevent a loop
-            if (window.location.pathname !== 'en/home/') {
-                window.location.href = 'en/home/';
-            }
-        };
-    </script>
-</head>
-<body>
-    <h1>You are being redirected...</h1>
-    <p>If you are not redirected automatically, <a href="en/">click here to proceed</a>.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- SEO Optimisation -->
+        <title>BUISA | Beihang University Indonesian Students' Association</title>
+        <meta name="description" content="Official portal of BUISA (Beihang University Indonesian Students' Association).">
+
+        <!-- Hreflang: language versions crawlbot assist -->
+        <link rel="alternate" hreflang="en" href="https://buisa.offic.web.id/en/home/" />
+        <link rel="alternate" hreflang="id" href="https://buisa.offic.web.id/id/home/" />
+        <link rel="alternate" hreflang="zh" href="https://buisa.offic.web.id/cn/home/" />
+        <link rel="alternate" hreflang="x-default" href="https://buisa.offic.web.id/en/home/" />
+
+        <!-- Meta Refresh: Fallback if JS is disabled -->
+        <meta http-equiv="refresh" content="0; url=en/home/">
+
+        <!-- JS linking -->
+        <script type="text/javascript">
+            window.onload = function() {
+                // Logic to prevent loops and send users to the main English home
+                if (!window.location.pathname.includes('en/home/')) {
+                    window.location.href = 'en/home/';
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <div style="text-align: center; padding-top: 50px; font-family: sans-serif;">
+            <h1>BUISA - Beihang University Indonesian Students' Association</h1>
+            <p>You are being redirected to our official homepage...</p>
+            <p>If you are not redirected automatically, <a href="en/home/">click here to proceed</a>.</p>
+            
+            <!-- Hidden gems for the Google Bot to index before redirecting -->
+            <div style="display:none;">
+                <p>BUISA, Beihang University Indonesian Students' Association, 北京航空航天大学印尼学生会议</p>
+            </div>
+        </div>
+    </body>
 </html>
