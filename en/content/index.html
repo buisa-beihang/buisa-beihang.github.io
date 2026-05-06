@@ -3,12 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Beihang University Indonesian Students' Association - Promoting cultural and academic exchange">
-        <title>Beihang Indonesia by BUISA</title>
+        
+        <!-- SEO Optimisation -->
+        <title>Media & Merchandise | BUISA Beihang Indonesia</title>
+        <meta name="description" content="Explore official BUISA (Beihang University Indonesian Students' Association) media, news, and exclusive merchandise. Support the Beihang University Indonesian Students' Association community.">
+        
+        <!-- Hreflang: language versions crawlbot assist -->
+        <link rel="alternate" hreflang="en" href="https://buisa.offic.web.id/en/content/" />
+        <link rel="alternate" hreflang="id" href="https://buisa.offic.web.id/id/content/" />
+        <link rel="alternate" hreflang="zh" href="https://buisa.offic.web.id/cn/content/" />
+        <link rel="alternate" hreflang="x-default" href="https://buisa.offic.web.id/en/content/" />
+        <link rel="canonical" href="https://buisa.offic.web.id/en/content/">
+
+        <!-- JS linking -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "BUISA Media and Merchandise",
+        "description": "Explore official BUISA (Beihang University Indonesian Students' Association) media, news, and exclusive merchandise. Support the Beihang University Indonesian Students' Association community.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "BUISA Beihang Indonesia",
+            "url": "https://buisa.offic.web.id"
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "BUISA Gallery and News Updates"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Official BUISA Merchandise"
+            }
+            ]
+        }
+        }
+        </script>
+        
         <!-- CSS and JS Dependencies -->
         <!-- Make sure to include the correct paths for all dependencies. -->
         <link rel="stylesheet" href="../../univ_code/universal_css.css">
         <script src="../../univ_code/universal_js.js" defer></script>
+
+        <!-- site specific CSS -->
         <style>
         </style>
     </head>
@@ -35,9 +77,9 @@
             <div class="univ_page-main-content-30px-margin" style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 15px;">
                 <h1 style="margin: 0;">BUISA</h1>
             <select id="univ_selector" class="univ_select" onchange="window.location.href=this.value">
-                    <option value="../en/">EN</option>
-                    <option value="../id/">ID</option>
-                    <option value="../cn/">CN</option>
+                    <option value="../../en/home/">EN</option>
+                    <option value="../../id/home/">ID</option>
+                    <option value="../../cn/home/">CN</option>
                 </select>
             </div>
             <!-- Main Content -->
@@ -50,6 +92,6 @@
                     <p class="text-center">An Authorised Students' Organisation Under The Embassy of Indonesia to China, Beijing.</p>
                 <br>
             </footer>
-        </div>
+        </div> <!-- Close the main body -->
     </body>
 </html>

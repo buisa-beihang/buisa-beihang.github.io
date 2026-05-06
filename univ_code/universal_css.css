@@ -64,6 +64,16 @@ body {
     left: 0;
 }
 
+@media (max-width: 900px) {
+    .univ_navbar {
+        width: 100%;
+    }
+    .univ_navbar.tucked ~ .univ_main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
 .univ_nav-link {
     color: #fff;
     font-size: 18px;
@@ -197,12 +207,14 @@ p {
 .univ_banner-container {
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .univ_sidebanner_container {
     position: relative;
     height: 100%; /* Make it flexible and take available height */
     overflow: hidden;
+    z-index: -1;
 }
 
 .univ_sidebanner_container img {
