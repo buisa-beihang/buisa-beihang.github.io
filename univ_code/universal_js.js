@@ -31,7 +31,7 @@ toggleNavBtn.addEventListener('click', () => {
 // Lag reduction - hide content during transition and show after transition
 navbar.addEventListener('transitionstart', (e) => {
     if (e.propertyName === 'width') {
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= 900;
         const isTucked = navbar.classList.contains('tucked');
 
         if (isMobile) {
