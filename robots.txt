@@ -6,8 +6,5 @@ Allow: /
 Allow: /univ_code/
 Allow: /fonts/
 
-# Exclude technical/empty directories
-Disallow: /cgi-bin/
-
 # Point to Sitemap
 Sitemap: https://buisa.offic.web.id/sitemap.xml
