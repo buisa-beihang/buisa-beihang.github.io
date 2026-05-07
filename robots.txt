@@ -1,10 +1,11 @@
-# Optimized robots.txt for BUISA
 User-agent: *
 Allow: /
 
-# Allow full access to assets for proper page rendering
+# Prevent media assets from showing up as search results
+Disallow: /media_assets/
+
+# Keep univ_code and fonts allowed so the site looks good to the bot
 Allow: /univ_code/
 Allow: /fonts/
 
-# Point to Sitemap
 Sitemap: https://buisa.offic.web.id/sitemap.xml
