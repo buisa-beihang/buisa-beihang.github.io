@@ -39,7 +39,7 @@ html {
 }
 
 body {
-    font-family: Radley, serif;
+    font-family: Radley, 'Noto Serif SC', serif;
     display: flex;
     background-color: #f5f5f5;
     line-height: 1.6;
@@ -206,7 +206,7 @@ p {
 /* Banner styling */
 .univ_banner-container {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;0
     z-index: -1;
 }
 
@@ -231,7 +231,7 @@ p {
     border: none;
     padding: 8px 12px;
     font-size: 18px;
-    font-family: Radley, serif;
+    font-family: Radley, 'Noto Serif SC', serif;
     cursor: pointer;
     border-radius: 8px;
     transition: all 0.3s ease;
